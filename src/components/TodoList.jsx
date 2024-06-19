@@ -61,10 +61,7 @@ function TodoList(props) {
   return (
     <>
       <div className="todo-header">
-        <img
-          className="icons"
-          src="./public/assets/Birch_Hanging_Sign_29_JE1_BE1.png"
-        />
+        <img className="icons" src="assets/Birch_Hanging_Sign_29_JE1_BE1.png" />
         <h2>Todo List</h2>
       </div>
       <TodoForm onSubmit={addTodo} />
