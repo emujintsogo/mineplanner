@@ -63,7 +63,7 @@ function TodoList(props) {
       <div className="todo-header">
         <img
           className="icons"
-          src="public/assets/Birch_Hanging_Sign_29_JE1_BE1.png"
+          src="./mineplanner/public/assets/Birch_Hanging_Sign_29_JE1_BE1.png"
         />
         <h2>Todo List</h2>
       </div>

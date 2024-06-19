@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className="header">
       <img
-        src="public/assets/Book_and_Quill_JE2_BE2.png"
+        src="./mineplanner/public/assets/Book_and_Quill_JE2_BE2.png"
         className="headerIcon"
       />
       <h1>MINEPLANNER</h1>
