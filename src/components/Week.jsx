@@ -16,7 +16,7 @@ function Week() {
   return (
     <div className="weekly-container">
       <div className="week-title">
-        <img src="./mineplanner/assets/Clock_JE3.png" className="icons" />
+        <img src="./assets/Clock_JE3.png" className="icons" />
         <h3>Weekly Planner</h3>
       </div>
       <div className="days-of-week">

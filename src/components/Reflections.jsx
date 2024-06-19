@@ -27,10 +27,7 @@ function Reflections() {
   return (
     <div className="reflections-container">
       <div className="reflections-header">
-        <img
-          className="icons"
-          src="./mineplanner/assets/Eye_of_Ender_JE2_BE2.png"
-        />
+        <img className="icons" src="./assets/Eye_of_Ender_JE2_BE2.png" />
         <h3>Reflections</h3>
         <FaEdit className="edit-icon" onClick={handleEdit} />
       </div>
