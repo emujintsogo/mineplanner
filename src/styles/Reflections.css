@@ -9,14 +9,20 @@
   height: 50px;
   padding: 5px;
   font-size: 15px;
-  margin: 15px 10px 10px 0;
+  margin: 10px 10px 10px 0;
   text-align: left;
 }
 
 .reflections-header {
   display: flex;
   align-items: center;
+  margin-top: 15px;
 }
 .reflections-header h3 {
   flex: 1;
+  font-size: 26px;
+}
+
+.reflections-header > .edit-icon {
+  margin-right: 10px;
 }
