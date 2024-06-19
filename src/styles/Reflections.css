@@ -1,0 +1,22 @@
+.reflections-container {
+  margin-top: 40px;
+  height: 30%;
+  padding: 5px;
+}
+
+.reflections-container input {
+  width: 90%;
+  height: 50px;
+  padding: 5px;
+  font-size: 15px;
+  margin: 15px 10px 10px 0;
+  text-align: left;
+}
+
+.reflections-header {
+  display: flex;
+  align-items: center;
+}
+.reflections-header h3 {
+  flex: 1;
+}

@@ -1,0 +1,21 @@
+.todo-header {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.todo-header h2 {
+  font-size: 26px;
+}
+
+.todo-icons {
+  display: flex;
+  justify-content: right;
+}
+
+.edit-icon,
+.delete-icon,
+.check-icon {
+  margin: 2px;
+  width: 15px;
+  height: 15px;
+}

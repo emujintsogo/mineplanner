@@ -1,0 +1,25 @@
+.weekly-container {
+  height: 60%;
+  width: 100%;
+}
+
+.week-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.week-title > h3 {
+  font-size: 26px;
+}
+
+.days-of-week {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.day {
+  display: flex;
+  border: 1px solid black;
+}
