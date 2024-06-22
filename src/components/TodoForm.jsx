@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/TodoList.css";
 
 function TodoForm(props) {
   const [input, setInput] = useState(props.edit ? props.edit.value : "");

@@ -19,7 +19,11 @@
 }
 
 .left-container {
-  width: 30%;
+  width: 35%;
+}
+.right-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .icons {

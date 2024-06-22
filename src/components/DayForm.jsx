@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { FaEdit } from "react-icons/fa";
-import { CgRemoveR } from "react-icons/cg";
+import "../styles/Week.css";
+import { RiAddBoxLine } from "react-icons/ri";
 
 function DayForm(props) {
-  const [input, setInput] = useState(props.edit ? props.value : "");
+  const [input, setInput] = useState(props.edit ? props.edit.value : "");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,38 +14,32 @@ function DayForm(props) {
     setInput("");
   };
 
-  const handleChange = (e) => {
-    setInput(e.target.value);
-  };
+  const handleChange = (e) => setInput(e.target.value);
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="day-task-form">
       {props.edit ? (
-        <>
+        <div className="day-edit">
           <input
-            placeholder="Update your item"
             value={input}
+            placeholder="Update event"
             onChange={handleChange}
             name="text"
-            className="todo-input edit"
+            className="event-input-edit"
           />
-          <button onClick={handleSubmit} className="todo-button edit">
-            <FaEdit />
-          </button>
-        </>
+          <button onClick={handleSubmit}>Update</button>
+        </div>
       ) : (
-        <>
+        <div className="input-add">
           <input
-            placeholder="Add a todo"
             value={input}
+            placeholder="Add event"
             onChange={handleChange}
             name="text"
-            className="todo-input"
+            className="event-input"
           />
-          <button onClick={handleSubmit} className="todo-button">
-            <CgRemoveR />
-          </button>
-        </>
+          <RiAddBoxLine className="add-icon" onClick={handleSubmit} />
+        </div>
       )}
     </form>
   );

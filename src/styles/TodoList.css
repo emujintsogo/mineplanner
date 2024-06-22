@@ -19,3 +19,21 @@
   width: 15px;
   height: 15px;
 }
+
+.todo-form input {
+  width: 95%;
+  font-size: 17px;
+  padding: 6px 3px;
+}
+
+.todo-form button {
+  margin-bottom: 7px;
+  font-size: 17px;
+}
+
+.todo-row-complete,
+.todo-row {
+  font-size: 17px;
+  margin-top: 5px;
+  padding-left: 15px;
+}

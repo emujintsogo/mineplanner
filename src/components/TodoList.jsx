@@ -10,11 +10,7 @@ function TodoList(props) {
   });
 
   useEffect(() => {
-    try {
-      localStorage.setItem("task", JSON.stringify(todos));
-    } catch (error) {
-      console.error("Failed to save todos to localStorage:", error);
-    }
+    localStorage.setItem("task", JSON.stringify(todos));
   }, [todos]);
 
   const addTodo = (todo) => {

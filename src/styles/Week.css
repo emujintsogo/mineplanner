@@ -1,6 +1,7 @@
-.weekly-container {
+.week-container {
   height: 60%;
-  width: 100%;
+  max-width: 100%;
+  display: flex;
 }
 
 .week-title {
@@ -9,17 +10,59 @@
   margin-bottom: 10px;
 }
 
-.week-title > h3 {
-  font-size: 26px;
-}
-
-.days-of-week {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-}
-
 .day {
   display: flex;
   border: 1px solid black;
+  max-width: 100%;
+}
+
+.input-add {
+  display: flex;
+  margin: 4px 0;
+}
+
+.input-add > .add-icon {
+  font-size: 19px;
+}
+
+.input-add > input {
+  font-size: 16px;
+  padding: 2px 4px;
+}
+
+.day-container {
+  padding: 10px;
+}
+
+.day-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+}
+
+.day-edit-icon,
+.day-delete-icon {
+  margin-left: 3px;
+}
+
+hr {
+  margin: 5px 0 8px 0;
+  border: 1px solid rgb(109, 109, 109);
+  border-radius: 5px;
+}
+
+.day-edit {
+  font-size: 16px;
+  padding: 2px 4px;
+}
+
+@media (max-width: 800px) {
+  .week-container {
+    flex-direction: column;
+  }
 }
